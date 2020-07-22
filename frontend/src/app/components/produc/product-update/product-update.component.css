@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 20px 15px 0px 0px;
+    }
+
+
+.msgm-error {
+    color: red !important;
+    font-size: 12px !important;
+    margin-top: -17px;
+    margin-left: 10px;
+}

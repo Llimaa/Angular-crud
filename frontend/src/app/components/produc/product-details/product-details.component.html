@@ -1,0 +1,13 @@
+<mat-list role="list">
+    <mat-list-item role="listitem"><b>Id:</b>{{product.id}}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem"><b>Nome:</b>{{product.name}}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" class="description"><b>description:</b>{{product.fullDescription}}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem"><b>Preço:</b>{{product.price | currency: 'BRL'}}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem"><b>Desconto:</b>{{product.discount | currency: 'BRL'}}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem"><b>Preço com desconto:</b>{{product.discountPrice | currency: 'BRL'}}</mat-list-item>
+</mat-list>

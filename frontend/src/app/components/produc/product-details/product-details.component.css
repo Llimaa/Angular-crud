@@ -1,0 +1,11 @@
+b {
+    margin-right: 10px !important;
+}
+
+.description {
+    display: grid;
+    min-height: 47px !important;
+    width: 100% !important;
+    height: 100% !important;
+    text-align: justify !important;
+}

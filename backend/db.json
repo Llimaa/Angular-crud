@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "name": "Veio do formulario",
+      "price": "99.99",
+      "id": 6,
+      "description": "Veio do formulario para mudar sua vida",
+      "discount": 100,
+      "discountPrice": 500
+    },
+    {
+      "name": "Veio do formulario",
+      "price": "99.99",
+      "id": 8,
+      "description": "Veio do formulario",
+      "discount": 12,
+      "discountPrice": 87.99
+    },
+    {
+      "name": "Computador",
+      "price": "1000",
+      "id": 9,
+      "description": "Veio do formulario",
+      "discount": 23,
+      "discountPrice": 4
+    },
+    {
+      "name": "Veio do formulario 10",
+      "price": 100,
+      "description": "Veio do formulario 10 Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10Veio do formulario 10",
+      "discount": 100,
+      "discountPrice": 0,
+      "id": 10
+    },
+    {
+      "name": "Produto 01",
+      "price": 1000,
+      "description": "Produto 01 é de altissima qualidade",
+      "discount": 50,
+      "discountPrice": 500,
+      "id": 11
+    },
+    {
+      "name": "Produto 02",
+      "price": 100,
+      "description": "Veio do formulario para mudar sua vida",
+      "discount": 10,
+      "discountPrice": 90,
+      "id": 12
+    }
+  ]
+}

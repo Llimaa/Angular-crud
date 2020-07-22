@@ -1,0 +1,44 @@
+<mat-card *ngIf="form">
+    <mat-card-title>Alterar Produto</mat-card-title>
+    <form [formGroup]="form">
+        <mat-form-field>
+            <input matInput placeholder="id" formControlName="id" name="id" readonly>
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Nome" formControlName="name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Descrição" formControlName="description" name="description">
+        </mat-form-field>
+        <div class="msgm-error" *ngIf="form.controls['description'].hasError('maxlength')">
+            A descrição deve ter no maximo 500 caracteres.
+        </div>
+        <mat-form-field>
+            <input type="number" matInput placeholder="Preço (R$)" formControlName="price" name="price"
+                (blur)="calculateDiscountPrice()">
+        </mat-form-field>
+        <div class="msgm-error" *ngIf="form.controls['price'].hasError('required')">
+            Campo preço não pode ser vazio
+        </div>
+        <mat-form-field>
+            <input type="number" matInput placeholder="Desconto (%)" (blur)="calculateDiscountPrice()"
+                formControlName="discount" name="discount">
+        </mat-form-field>
+        <div class="msgm-error"
+            *ngIf="form.controls['discount'].hasError('min') || form.controls['discount'].hasError('max')">
+            O desconto deve está dentro do intervalo de 0 a 100.
+        </div>
+
+        <mat-form-field>
+            <input disabled="true" [(ngModel)]="product.discountPrice" type="text" matInput
+                placeholder="Preço com desconto (R$)" formControlName="discountPrice" name="discountPrice">
+        </mat-form-field>
+    </form>
+    <button [disabled]="form.invalid" (click)="updateProduct()" mat-raised-button type="button" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
